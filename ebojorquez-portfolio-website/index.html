@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--metatags are data that are displayed in head will not be displayed on the page-->
+    <!--UTF-8 allows for special characters in text-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="WDD Portfolio" />
+    <!--this first assignment only uses html but ok to add css and java-->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Elizabeth Bojorquez" />
+    <!--viewport metatag is the visable area of the webpage and varies with the device like mobile phone or computer screen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bio</title>
+    <!--linking javascript file must have folder name before-->
+    <!--the defer allows you to place the javascript file in head and still defer the changes throughout page-->
+    <script src="javascript/variables.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body_content">
+    <header class="header_standard">
+      <!--This should be the title of your webpage, place this title in the biggest heading tag -->
+      <h1 class="h1_standard">Elizabeth Bojorquez</h1>
+
+      <!--The HTML <img> tag is used to embed an image in a web page-->
+      <!--The <img> tag has two required attributes (src & alt)-->
+      <!--<src>Specifies the path to the image and image must be located in a shared folder (images)-->
+      <!--the image must not contain spaces and be written exactly as saved-->
+      <!--<alt>Specifies an alternate text for the image-->
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="designs.html">Designs</a></li>
+          <li><a href="portfolio.html"> Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="h2_standard">Designer's Bio</h2>
+    <main class="index_col">
+      <div class="photo">
+        <img
+          src="Images/liz_288x288.png"
+          alt="woman headshot in black"
+          width="288"
+          height="288"
+        />
+      </div>
+
+      <p class="para_standard">
+        <!-- a min of 2 paragraphs with basic info like hobbies crafts sports and similar interests between the paragraph tags-->
+        <!--always add time tag to dates and time-->
+        <!--different element names are added after tag when date or time format is preferred - see notes-->
+        My journey with web design began in the summer of 2021 at Texas State
+        Technical College. In less than a year I have learned more than I ever
+        would have imagined. I have gained a strong foundation in Web Design &
+        Development. This along with my aptitude of learning new things quickly,
+        has confidently prepared me to make it a profession.
+      </p>
+      <p class="para_standard">
+        <!--strong tag gives text importance and looks different from b bold tag-->
+        What began as an opportunity to gain knowledge in web design and
+        development through a certification program led me through a path that
+        chanels my creativity and challenges my strength of data and analytical
+        decision making.I value the commitment of teamwork, trust and above all
+        - strong work ethic. As a former educator, I believe in being a lifelong
+        learner. That being said, I have undoubtedly found my niche!
+      </p>
+    </main>
+
+    <footer class="footer_standard">
+      <h2>Let's Keep In Touch!</h2>
+      <p>
+        162 S. Nueces Park Lane<br />Harlingen, Texas 78552<br />(210)771-2355
+      </p>
+      <address>
+        <a href="mailto:ebojo26@gmail.com">ebojo26@gmail.com</a>
+      </address>
+      &copy; 2022 by Elizabeth Bojorquez<br />
+    </footer>
+  </body>
+</html>

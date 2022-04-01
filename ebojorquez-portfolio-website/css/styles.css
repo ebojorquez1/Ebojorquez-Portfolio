@@ -1,0 +1,240 @@
+header.header_standard {
+  font-family: "oswald", Helvetica;
+  height: 10%;
+  text-align: center;
+  line-height: 1;
+  background-color: #707070;
+  border-style: inset;
+  border: 2px solid #707070;
+  border-width: 2px;
+}
+
+h1.h1_standard {
+  font-family: "rosella-engraved", Helvetica;
+  font: 700;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #ffece6;
+}
+h2.h2_standard {
+  font: 700;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #707070;
+  font-family: "volina", Helvetica;
+  text-align: center;
+  clear: both;
+}
+
+.photo {
+  float: left;
+  width: 288px;
+  height: 288px;
+  padding-right: 8px;
+  margin: 0%;
+  border: 0px;
+  text-align: center;
+
+}
+
+/*independent so can use it where ever I want*/
+/*I can always change color pallets as needed*/
+/*try to have 4 for M4*/
+/*border property -shorthand property- takes 3 values: line width, line style and color*/
+
+.body_content {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #fffaf4;
+  background-color: #fffaf4;
+  color: #707070;
+  min-width: 1080px;
+  max-width: 1224px;
+  font-family: "Oswald", Helvetica;
+}
+
+.para_standard {
+  font-size: 28px;
+  text-align: justify;
+  line-height: 40px;
+  padding: 8px;
+  color: #7d6b7d;
+  clear: right;
+}
+
+/* ALWAYS APPLY FLOATS TO PARENT CONTAINERS */
+
+.index_col {
+  column-count: 2;
+  column-gap: 50px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#pictures {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0%;
+  margin: 0%;
+  border: 0px;
+}
+
+.col {
+  font-family: "Oswald", Helvetica;
+  color: #707070;
+  background-color: #83ff66;
+  padding: 10px;
+  width: 32%; 
+  margin: auto;
+  overflow: hidden;
+}
+
+/*id selectors can only be used once on a page*/
+/*work similar to classes*/
+/*try to have atleast 1 for M4*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #707070;
+  padding: 10px;
+}
+
+.footer_standard {
+  height: 10%;
+  background-color: #707070;
+  color: black;
+  text-align: center;
+  border: 2px solid #707070;
+}
+
+li {
+  font-family: "Oswald", Helvetica;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+dl {
+  font-family: "Oswald", Helvetica;
+  font-size: 1.25em;
+  color: #7d6b7d;
+}
+
+dt {
+  font-family: "Oswald", Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+dd {
+  font-family: "Oswald", Helvetica;
+  font-size: 18px;
+}
+
+blockquote {
+  font-family: "Oswald", Helvetica;
+  font-size: 24px;
+}
+
+div {
+  text-align: center;
+}
+
+/* anchor for all links */
+a {
+  text-decoration: none;
+}
+
+/* specific pseudo classes for links */
+/* must keep this order */
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* outline: 1px solid black; */
+a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(192, 176, 176);
+}
+
+a:active {
+  color: white;
+}
+
+nav li {
+  list-style-type: none;
+  font-family: "Oswald", Helvetica;
+  background-color: #88a5b3;
+  color: black;
+  text-align: center;
+  font-size: 1.25em;
+  text-decoration: none;
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+
+  /*list style is how you want the bullets to look - use none for nav*/
+  /*text decoration set to none removes the underline off of a link 
+  font-family: 16px "DM Sans", sans-serif;*/
+}
+
+nav ul {
+  display: block;
+  flex-direction: row;
+/* ==============smart device============= */
+
+@media screen and (max-width: 600px) {
+  .body_content {
+    background-color: pink;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  .flex-container {
+    display: list-item;
+    justify-content: space-between;
+  }
+  .index_col {
+    column-count: 1;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #pictures {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+  }
+}
+/* ==============Tablet============= */
+
+@media screen and (min-width: 601px) and (max-width: 1075px) {
+  .body_content {
+    background-color: lightgreen;
+    min-width: 601px;
+    max-width: 1079px;
+  }
+  #pictures {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+  }
+}
