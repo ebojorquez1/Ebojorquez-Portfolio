@@ -1,0 +1,193 @@
+/* You can view a list of id and class attribute suggestions via ctrl + space. */
+/*=================TYPOGRAPHY===================
+=================COLORS=================== 
+.BOJORQUEZ--1-hex{ color: #382607; }
+.BOJORQUEZ--2-hex{ color: #D19D43; }
+.BOJORQUEZ--3-hex{ color: #855F1D; }
+.BOJORQUEZ--4-hex{ color: #011C38; }
+.BOJORQUEZ--5-hex{ color: #1D4F85; }
+
+.BOJORQUEZ--1-hex{ color: #917D19; }
+.BOJORQUEZ--2-hex{ color: #9C791A; }
+.BOJORQUEZ--3-hex{ color: #855F1D; }
+.BOJORQUEZ--4-hex{ color: #9C5C1A; }
+.BOJORQUEZ--5-hex{ color: #914519; }
+/* ===============================BODY/ALL============================== */
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23011c38&ctz=America%2FChicago&src=ZWJvam8yNkBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%237986CB&color=%237986CB" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>/* ===============================RESPONSIVE DESIGN PROPERTIES============================== */
+.index_col {
+  column-count: 2;
+  column-gap: 50px;
+}
+
+.gal_flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: wrap-reverse;
+  padding: auto;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  background-color: whitesmoke;
+  color: #382607;
+  min-width: 1080px;
+  max-width: 1224px;
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  color: antiquewhite;
+  font-size: 2.25em;
+  text-align: center;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 2em;
+}
+h3 {
+  display: inline;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 1em;
+}
+/* ===============================HEADER/NAV============================== */
+header {
+  font-family: "Fuzzy Bubbles", cursive;
+  height: 9em;
+  width: 100%;
+  /* line-height: 1; */
+  text-align: center;
+  background-color: #011c38;
+  color: #d19d43;
+  border-style: inset;
+  border: .1em solid white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #855f1d;
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(192, 176, 176);
+}
+
+a:active {
+  color: white;
+}
+
+nav li {
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  background-color: #382607;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 32px;
+  display: inline-block;
+}
+
+/* ===============================MAIN/INFORMATION============================== */
+img {
+  display: block;
+  float: left;
+  padding: 8px;
+  overflow: hidden;
+}
+
+
+.pad {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.center {
+  align-content: center;
+  text-align: center;
+}
+
+.background {
+  background-color: whitesmoke;
+}
+
+/* ===============================FOOTER============================== */
+
+footer {
+  height: 7%;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  border: 2px solid white;
+  clear: both;
+}
+
+/* ===============================PICS============================== */
+
+/* ===============================QUERIES============================== */
+/*list style is how you want the bullets to look - use none for nav*/
+/*text decoration set to none removes the underline off of a link 
+  nav ul {
+  display: flexbox;
+  flex-direction: row;
+} 
+
+/* ==============smart device============= */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightpink;
+    min-width: 300px;
+    max-width: 600px;
+  }
+}
+
+/* ==============Tablet============= */
+@media screen and (min-width: 601px) and (max-width: 1075px) {
+  body {
+    background-color: lightgreen;
+    min-width: 601px;
+    max-width: 1079px;
+  }
+}
+/* ===============================TEMP COM OUT============================== */
+/* =====GRIDVIEW===== */
+
+/* * {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: #1d4f85;
+  color: #ffffff;
+  padding: 15px;
+}
+
