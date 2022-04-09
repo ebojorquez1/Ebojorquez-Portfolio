@@ -1,0 +1,353 @@
+/*dependant is only assigned to the first word section in the css try to have 4 for M4*/
+
+header.header_standard {
+  font-family: "Mochiy Pop P One", sans-serif;
+  height: 10%;
+  text-align: center;
+  line-height: 1;
+  background-color: #ff8c64;
+  color: mediumvioletred;
+  border-style: inset;
+  border: 2px solid #ff8c4d;
+  border-width: 2px;
+}
+
+h1.h1_standard {
+  font: 700;
+  font-size: 36px;
+  font-weight: bolder;
+  color: aliceblue;
+}
+h2.h2_standard {
+  font: 700;
+  font-size: 28px;
+  font-weight: bolder;
+  color: #ff4dd6;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-align: center;
+}
+
+.photo {
+  float: left;
+  margin: 10px;
+  width: 100%;
+  height: 300px;
+}
+
+/*independent so can use it where ever I want*/
+/*I can always change color pallets as needed*/
+/*try to have 4 for M4*/
+/*border property -shorthand property- takes 3 values: line width, line style and color*/
+.body_content {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #4dfffb;
+  /* border-style: solid;
+  border-width: thick;
+  border-color: #ff6459; */
+  background-color: #4dfffb;
+  color: #ff6459;
+  min-width: 1080px;
+  max-width: 1224px;
+  font: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.para_standard {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 30px;
+  padding: 20px;
+  color: #7d6b7d;
+}
+
+.h3_like1 {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.h4_like1 {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+/* ALWAYS APPLY FLOATS TO PARENT CONTAINERS */
+
+.index_col {
+  column-count: 2;
+  column-gap: 50px;
+  padding: 20px;
+}
+
+#pictures {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0%;
+  margin: 0%;
+  border: 0px;
+}
+
+.col {
+  font-family: "Montserrat", sans-serif;
+  color: #ff6459;
+  background-color: #83ff66;
+  padding: 10px;
+  /* width: 32%; */
+  /* margin: auto; */
+  /* overflow: hidden; */
+}
+
+/*id selectors can only be used once on a page*/
+/*work similar to classes*/
+/*try to have atleast 1 for M4*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #ff6459;
+  padding: 10px;
+}
+
+/* .grid-item {
+  background-color: #ff8c64;
+  border: 1px solid #ff8c64;
+  color: antiquewhite;
+  text-align: center;
+} */
+
+.footer_standard {
+  height: 10%;
+  background-color: #ff8c4d;
+  color: black;
+  text-align: center;
+  border: 2px solid #ff8c4d;
+}
+
+/* .grid-container {
+  display: grid;
+} */
+
+/*same css not moved to class or id*/
+
+/*height: auto;   included in body_standard class*/
+
+/*line-height: 1.5; */
+
+/*font-family: "Montserrat", sans-serif;   included in body_standard class*/
+
+/*color: #7d6b7d;
+  background-color: lavender;
+} */
+
+/*footer {
+  text-align: center;
+  background-color: lavender;
+}*/
+
+li {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+dl {
+  font-family: sans-serif;
+  font-size: 1.25em;
+  color: #7d6b7d;
+}
+
+dt {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+dd {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+blockquote {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+strong {
+  color: #63b350;
+}
+
+div {
+  text-align: center;
+}
+
+/* anchor for all links */
+a {
+  text-decoration: none;
+}
+
+/* specific pseudo classes for links */
+/* must keep this order */
+a:link {
+  color: #4dfffb;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #83ff66;
+  text-decoration: none;
+}
+
+/* outline: 1px solid black; */
+a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(192, 176, 176);
+}
+
+a:active {
+  color: white;
+}
+
+nav li {
+  list-style-type: none;
+  font-family: "Mochiy Pop P One", sans-serif;
+  /* background-color: #ff4dd6; */
+  color: black;
+  text-align: center;
+  font-size: 1.25em;
+  text-decoration: none;
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+
+  /*list style is how you want the bullets to look - use none for nav*/
+  /*text decoration set to none removes the underline off of a link 
+  font-family: 16px "DM Sans", sans-serif;*/
+}
+
+nav ul {
+  display: flexbox;
+  flex-direction: row;
+}
+
+h4 p:last-child {
+  color: blue;
+  font-style: italic;
+}
+
+h3 + p::first-letter {
+  font-size: 250%;
+}
+/* =============Forms================= */
+
+/* ===========Table Elements========= */
+
+table,
+th,
+td {
+  border: 1px solid black;
+  tab-size: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #83ff66;
+  background-color: #ff6459;
+  padding: 10px;
+  /* width: 32%; */
+  margin: auto;
+  overflow: hidden;
+}
+
+section {
+  line-height: 1em;
+  columns: 1;
+}
+
+section h3 {
+  color: #63b350;
+}
+
+/* ==============smart device============= */
+
+@media screen and (max-width: 600px) {
+  .body_content {
+    background-color: lightpink;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  .flex-container {
+    display: list-item;
+    justify-content: space-between;
+  }
+  .index_col {
+    column-count: 1;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #pictures {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+  }
+}
+/* ==============Tablet============= */
+@media screen and (min-width: 601px) and (max-width: 1075px) {
+  .body_content {
+    background-color: lightgreen;
+    min-width: 601px;
+    max-width: 1079px;
+  }
+  #pictures {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+  }
+}
+
+/*  styles in sound clip <div
+style="
+  font-size: 10px;
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+    Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+  font-weight: 100;
+"
+>
+<a
+  href="https://soundcloud.com/brainpicker"
+  title="brainpicker"
+  target="_blank"
+  style="color: #cccccc; text-decoration: none"
+  >brainpicker</a
+>
+·
+<a
+  href="https://soundcloud.com/brainpicker/maya-angelou-reads-life-doesnt"
+  title='Maya Angelou reads "Life Doesnt Frighten Me"'
+  target="_blank"
+  style="color: #cccccc; text-decoration: none"
+  >Maya Angelou reads &quot;Life Doesnt Frighten Me&quot;</a
+>
+</div>
+  */

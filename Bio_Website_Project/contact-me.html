@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--metatags are data that are displayed in head will not be displayed on the page-->
+    <!--UTF-8 allows for special characters in text-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="author biography" />
+    <!--this first assignment only uses html but ok to add css and java-->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Elizabeth Bojorquez" />
+    <!--viewport metatag is the visable area of the webpage and varies with the device like mobile phone or computer screen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bojorquez Bio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body_content">
+    <header class="header_standard">
+      <!--This should be the title of your webpage, place this title in the biggest heading tag -->
+      <h1 class="h1_standard">Elizabeth Bojorquez</h1>
+
+      <!--The HTML <img> tag is used to embed an image in a web page-->
+      <!--The <img> tag has two required attributes (src & alt)-->
+      <!--<src>Specifies the path to the image and image must be located in a shared folder (images)-->
+      <!--the image must not contain spaces and be written exactly as saved-->
+      <!--<alt>Specifies an alternate text for the image-->
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="favorites.html">My Favorites</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact-me.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="h2_standard">Contact Me</h2>
+    <main>
+      <h2>Let's keep in touch!</h2>
+
+      <p>
+        Thank you for visiting my webpage. Please fill out the short contact
+        information form below if you would like more information about my new
+        business venture.
+      </p>
+      <div class="photo">
+        <img
+          src="Images/liz.png"
+          alt="Profile picture of Elizabeth Bojorquez"
+          width="432"
+          height="288"
+        />
+      </div>
+
+      <!-- Appends form-data into the URL in name/value pairs
+  The length of a URL is limited (about 3000 characters)
+  Never use GET to send sensitive data! (will be visible in the URL)
+  Useful for form submissions where a user wants to bookmark the result
+  GET is better for non-secure data, like query strings in Google -->
+
+      <!-- Appends form-data inside the body of the HTTP request (data is not shown in URL)
+  Has no size limitations
+  Form submissions with POST cannot be bookmarked -->
+
+      <form action="/action_page.php" method="post" name="my_contact_form">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <label for="message">Message Me:</label>
+        <textarea id="message" name="message" rows="4" cols="50"> </textarea>
+        <br /><br />
+        <input type="submit" value="submit" />
+      </form>
+    </main>
+    <footer class="footer_standard">
+      Copyright &copy; 2021 by Elizabeth Bojorquez<br />
+      <address>
+        <a href="mailto:ebojorquez@mymail.tstc.edu"
+          >ebojorquez@mymail.tstc.edu</a
+        >
+      </address>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--metatags are data that are displayed in head will not be displayed on the page-->
+    <!--UTF-8 allows for special characters in text-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="author biography" />
+    <!--this first assignment only uses html but ok to add css and java-->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Elizabeth Bojorquez" />
+    <!--viewport metatag is the visable area of the webpage and varies with the device like mobile phone or computer screen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bojorquez Gallery</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body_content">
+    <header class="header_standard">
+      <!--This should be the title of your webpage, place this title in the biggest heading tag -->
+      <h1 class="h1_standard">Elizabeth Bojorquez</h1>
+
+      <!--The HTML <img> tag is used to embed an image in a web page-->
+      <!--The <img> tag has two required attributes (src & alt)-->
+      <!--<src>Specifies the path to the image and image must be located in a shared folder (images)-->
+      <!--the image must not contain spaces and be written exactly as saved-->
+      <!--<alt>Specifies an alternate text for the image-->
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="favorites.html">My Favorites</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact-me.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="h2_standard">Photo Gallery</h2>
+
+    <main>
+      <p class="para_standard">
+        <!-- a min of 2 paragraphs with basic info like hobbies crafts sports and similar interests between the paragraph tags-->
+        <!--always add time tag to dates and time-->
+        <!--different element names are added after tag when date or time format is preferred - see notes-->
+        I work hard in a field I love and keep busy with a family of seven, but
+        whenever possible I try to incorporate the hobbies and interests I enjoy
+        doing with my family. Although the teenagers no longer find in cool to
+        cook with mom, I can still rely on Olivia (4yr) being mommy's assistand
+        in the kitchen. The same could be said for my time spent gardening or
+        working on home improvements. If I'm being totally honest, my older
+        children have shared that they rather keep their distance when mom is
+        working on her "projects". I don't complain since my "projects" equally
+        serve as my R&R time. One hobby that has seemed to link everyone's
+        interest is puzzlemaking. And be warned - THE PUZZLE MUST BE COMPLETED
+        BEFORE WE SLEEP - or it mysteriously ends up completed by morning. And
+        when it comes to getting away...Vegas Baby!
+      </p>
+      <!--strong tag gives text importance and looks different from b bold tag-->
+
+      <div id="pictures">
+        <div class="col">
+          <img
+            src="Images/baking.png"
+            alt="Baking ingredients nealy spread on a table"
+            class="center"
+            width="288"
+            height="432"
+          />
+
+          <p class="para_standard">
+            Baking traditional foods and exploring new recipes is a staple in
+            our family.
+          </p>
+        </div>
+
+        <div class="col">
+          <img
+            src="Images/gardening.png"
+            alt="four small gardening tools hanging over three outdoor potted plants"
+            class="center"
+            width="288"
+            height="432"
+          />
+
+          <p class="para_standard">
+            Although I may not get enough time to work on my garden as I would
+            like, it is always one of my favorite things to do.
+          </p>
+        </div>
+
+        <div class="col">
+          <img
+            src="Images/painting.png"
+            alt="a strip of green, red, orange and blue paint rolled vertically onto a white wall"
+            class="center"
+            width="288"
+            height="432"
+          />
+
+          <p class="para_standard">
+            Whether it's painting a craft with my children, on a canvas or
+            trying out a new look on our walls, painting is one of my most
+            satisfying hobbies.
+          </p>
+        </div>
+
+        <div class="col">
+          <img
+            src="Images/relaxing.png"
+            alt="four infused sticks in a short clear glass vase, a neatly rolled white towel, short ivory round lit candle, a slightly taller tan round lit candle and a green small leaved branch behind items on a white table and background"
+            class="center"
+            width="288"
+            height="432"
+          />
+
+          <p class="para_standard">
+            Rest and Relaxation is highly valued in my book!
+          </p>
+        </div>
+
+        <div class="col">
+          <img
+            src="Images/puzzles.png"
+            alt="thirteen medium sized puzzle pieces spread face up on tan tiled floor with seven light blue connected corner pieces"
+            class="center"
+            width="288"
+            height="432"
+          />
+
+          <p class="para_standard">
+            Puzzles are a great way for me (with or without my family) to unwind
+            while my mind continues working to complete the task at hand.
+          </p>
+        </div>
+
+        <div class="col">
+          <img
+            src="Images/gambling.png"
+            alt="Two die, one red playing chip and two face up hands of poker cards on a bed of hundred dollar bills."
+            class="center"
+            width="288"
+            height="432"
+          />
+
+          <p class="para_standard">
+            When it comes to escaping for a quick getaway, you are sure to find
+            my husband and I playing at a nearby casino if available.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer_standard">
+      Copyright &copy; 2021 by Elizabeth Bojorquez<br />
+      <address>
+        <a href="mailto:ebojorquez@mymail.tstc.edu"
+          >ebojorquez@mymail.tstc.edu</a
+        >
+      </address>
+    </footer>
+  </body>
+</html>
