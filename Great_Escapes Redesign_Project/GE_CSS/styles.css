@@ -1,0 +1,277 @@
+/*dependant is only assigned to the first word section in the css try to have 4 for M4*/
+
+header.header_standard {
+  height: 250px;
+  font-family: "campaign", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  line-height: normal;
+  background-color: #24260f;
+  color: #bf8641;
+  border-style: inset;
+  border-color: black;
+  border-width: 2px;
+}
+
+h1.h1_standard {
+  font-family: "moby", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  color: #bf8641;
+}
+
+h2.h2_standard {
+  font: 700;
+  font-size: 48px;
+  color: black;
+  font-family: "moby-monospace", monospace;
+  font-style: normal;
+  font-weight: 400;
+  height: 50px;
+  text-align: center;
+}
+
+/*independent so can use it where ever I want*/
+/*I can always change color pallets as needed*/
+/*try to have 4 for M4*/
+/*border property -shorthand property- takes 3 values: line width, line style and color*/
+.body_content {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  /* border-style: solid;
+  border-width: thick;
+  border-color: #ff6459; */
+  background-color: #73321a;
+  color: #f2c46d;
+  min-width: 1080px;
+  max-width: 1224px;
+  font: 16px;
+  font-family: "campaign", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.para_standard {
+  font-size: 1.25em;
+  text-align: center;
+  color: #ccaa3b;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.col {
+  font-family: "campaign", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  background-color: #f2c46d;
+  width: 32%;
+  margin: auto;
+  overflow: hidden;
+  color: #24260f;
+  padding-top: 5%;
+  padding-bottom: 0%;
+  display: inline-block;
+}
+
+.half {
+  font-family: "campaign", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: black;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.left {
+  text-align: left;
+}
+
+.copy {
+  text-align: center;
+  background-color: whitesmoke;
+  color: black;
+  height: 30px;
+  font-family: "campaign", sans-serif;
+  font-style: oblique;
+  font-weight: 200;
+  padding-top: 2%;
+  padding-bottom: 0%;
+}
+.footer_standard {
+  text-align: center;
+  line-height: 1px;
+  font-size: 16px;
+  background-color: #24260f;
+  height: 300px;
+  border: 2px solid black;
+  padding: auto;
+}
+
+.button {
+  font-family: "campaign", sans-serif;
+  font-weight: 400;
+  height: 20px;
+  background-color: #cc613b;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 18px;
+  text-decoration-line: none;
+  text-decoration: none;
+  border: #cc613b;
+  padding: 15px 32px;
+  display: inline-block;
+}
+
+/*id selectors can only be used once on a page*/
+/*work similar to classes*/
+/*try to have atleast 1 for M4*/
+#pictures {
+  padding: 0%;
+  margin: 0%;
+  border: 0px;
+}
+
+/*same css not moved to class or id*/
+
+/*height: auto;   included in body_standard class*/
+
+/*line-height: 1.5; */
+
+/*font-family: "Montserrat", sans-serif;   included in body_standard class*/
+
+/*color: #7d6b7d;
+  background-color: lavender;
+} */
+
+/*footer {
+  text-align: center;
+  background-color: lavender;
+}*/
+
+h3 {
+  font-family: "campaign", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  height: 10px;
+  color: #ccaa3b;
+  text-align: center;
+}
+h4 {
+  font-family: "campaign", sans-serif;
+  font-style: oblique;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1px;
+  color: black;
+  text-align: center;
+}
+
+h5 {
+  font-family: "campaign", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1px;
+  color: #c2704f;
+  text-align: center;
+}
+
+li {
+  font-family: "campaign", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #ccaa3b;
+  text-decoration: none;
+}
+
+ul {
+  font-size: 24px;
+  text-align: center;
+  list-style-position: inside;
+  text-decoration: none;
+}
+
+dl {
+  font-family: "campaign", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #ccaa3b;
+}
+
+dd {
+  font-family: "campaign", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  color: #ccaa3b;
+}
+
+div {
+  text-align: center;
+}
+
+a {
+  /* anchor for all links */
+}
+
+/* specific pseudo classes for links */
+/* must keep this order */
+a:link {
+  color: #f2c46d;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #cc613b;
+}
+a:focus {
+  /* outline: 1px solid black; */
+}
+
+a:hover {
+  background-color: rgb(192, 176, 176);
+}
+
+a:active {
+  color: whitesmoke;
+}
+
+nav li {
+  list-style-type: none;
+  font-family: "moby-monospace", monospace;
+  font-weight: 400;
+  height: 20px;
+  background-color: #24260f;
+  color: #9e9a8e;
+  text-align: center;
+  font-size: 18px;
+  text-decoration-line: none;
+  text-decoration: none;
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+
+  /*list style is how you want the bullets to look - use none for nav*/
+  /*text decoration set to none removes the underline off of a link 
+  font-family: 16px "DM Sans", sans-serif;*/
+}
+main h4 p:last-child {
+  font-style: italic;
+}
+
+/*body p:first-child {
+  line-height: 0.25;
+  font-size: 14px;
+  color: red;
+  padding-top: 0.5%%;
+  padding-bottom: 1%;
+}*/
