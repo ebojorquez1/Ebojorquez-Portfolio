@@ -1,0 +1,262 @@
+/*============================COLORS=========================*/
+/* .Banksters-Comics-1-hex {
+  color: #997131;
+}
+.Banksters-Comics-2-hex {
+  color: #e6a53e;
+}
+.Banksters-Comics-3-hex {
+  color: #3334e6;
+}
+.Banksters-Comics-4-hex {
+  color: #909912;
+}
+.Banksters-Comics-5-hex {
+  color: #d8e627;
+}
+.Banksters-Comics-1-hex {
+  color: #9729f2;
+}
+.Banksters-Comics-2-hex {
+  color: #642bfc;
+}
+.Banksters-Comics-3-hex {
+  color: #3334e6;
+}
+.Banksters-Comics-4-hex {
+  color: #2b62fc;
+}
+.Banksters-Comics-5-hex {
+  color: #2993f2;
+} */
+/*============================fonts=========================*/
+/* font-family: "Bangers", cursive;
+font-family: "Open Sans Condensed", sans-serif;
+font-family: "Oswald", sans-serif; */
+/*============================BODY=========================*/
+body {
+  min-width: 1080px;
+  max-width: 1224px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+}
+
+div {
+  text-align: center;
+}
+
+/* img {
+  display: block;
+  float: left;
+  padding: 8px;
+  overflow: hidden;
+} */
+
+.index_col {
+  column-count: 2;
+  column-gap: 50px;
+}
+
+.gal_flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: wrap-reverse;
+}
+
+/*============================HEADER=========================*/
+header {
+  font-family: "Open Sans Condensed", sans-serif;
+  width: auto;
+  /* height: auto; */
+  /* height: 9em; */
+  height: 350px;
+  text-align: center;
+  line-height: 1;
+  background-color: #909912;
+  border-style: inset;
+  /* border: 2px solid white; */
+  border: 0.1em solid white;
+}
+.logo {
+  padding: 8px;
+  display: flexbox;
+  margin: 10px;
+  max-width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+/* li {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+dl {
+  font-family: sans-serif;
+  font-size: 1.25em;
+  color: #7d6b7d;
+}
+
+dt {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+dd {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+blockquote {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+strong {
+  color: #63b350;
+} */
+
+/*============================NAV=========================*/
+nav {
+  width: 100%;
+  height: auto;
+}
+
+.a {
+  text-decoration: line lime;
+}
+
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:visited {
+  color: BLACK;
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(192, 176, 176);
+}
+
+a:active {
+  color: grey;
+}
+
+nav li {
+  list-style-type: none;
+  font-family: "Oswald", sans-serif;
+  background-color: #642bfc;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 32px;
+  display: inline-block;
+}
+
+/*============================MAIN=========================*/
+main {
+  background-color: #2993f2;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+}
+
+h1 {
+  font-family: "Bangers", cursive;
+  font: 700;
+  font-size: 80px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d8e627;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  text-align: right;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5em;
+  color: #642bfc;
+}
+
+h4 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1em;
+  color: #642bfc;
+}
+
+.p_large {
+  font-size: 60px;
+}
+
+#pictures {
+  display: grid;
+  padding: 0%;
+  margin: 0%;
+  border: 0px;
+}
+
+.col {
+  width: 32%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.pad {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.center {
+  align-content: center;
+  text-align: center;
+}
+/*============================FOOTER=========================*/
+footer {
+  height: 7%;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  border: 2px solid white;
+  clear: both;
+}
+/*============================QUERIES=========================*/
+/* ==============smart device============= */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightpink;
+    min-width: 300px;
+    max-width: 600px;
+  }
+}
+/* ==============Tablet============= */
+@media screen and (min-width: 601px) and (max-width: 1075px) {
+  body {
+    background-color: lightgreen;
+    min-width: 601px;
+    max-width: 1079px;
+  }
+}
